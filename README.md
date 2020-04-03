@@ -1,4 +1,4 @@
-# Coronavirus stats in Spain
+# Coronavirus stats in Nigeria
 
 Actor gets an actual number of infected, deceased and recovered people in Nigeria from https://covid19.ncdc.gov.ng/.
 
