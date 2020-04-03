@@ -1,9 +1,9 @@
-# Coronavirus stats in Bulgaria
+# Coronavirus stats in Spain
 
-Actor gets an actual number of examined and infected people in Bulgaria from https://www.mh.government.bg/bg/informaciya-za-grazhdani/potvrdeni-sluchai-na-koronavirus-na-teritoriyata-na-r-blgariya/.
+Actor gets an actual number of infected, deceased and recovered people in Nigeria from https://covid19.ncdc.gov.ng/.
 
-Latest data are available at this URL: https://api.apify.com/v2/key-value-stores/np4eYah8M5uQtj0Su/records/LATEST?disableRedirect=true.
+Latest data are available at this URL: .
 
-You can find a dataset with unique history items here: https://api.apify.com/v2/datasets/OicoAbu38M2cGAcDl/items?format=json&clean=1.
+You can find a dataset with unique history items here: .
 
 URL is being actualized every 5 minutes.

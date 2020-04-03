@@ -1,6 +1,6 @@
 {
-  "title": "BG COVID-19 Statistics",
-  "description": "This actor scrapes data about COVID-19 from Bulgarian Ministry of Health.",
+  "title": "NG COVID-19 Statistics",
+  "description": "This actor scrapes data about COVID-19 from Nigerian CDC.",
   "type": "object",
   "schemaVersion": 1,
   "properties": {
