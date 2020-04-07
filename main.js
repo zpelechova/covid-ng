@@ -26,24 +26,17 @@ Apify.main(async () => {
         const infected = $('#custom1 > tbody > tr:nth-child(1) > td:nth-child(2) > p > b').text();
         const deceased = $('#custom1 > tbody > tr:nth-child(3) > td:nth-child(2) > p > b').text();
         const recovered = $("#custom1 > tbody > tr:nth-child(2) > td:nth-child(2) > p > b").text();
-        // const hospitalised = $("#hospitalizados").text();
-
-        // const regionsTableRows = Array.from(document.querySelectorAll("#custom3"));
-        // const regionData = [];
-
-        // for(const row of regionsTableRows){
-        //     const cells = Array.from(row.querySelectorAll("td")).map(td=> td.textContent);
-        //     regionData.push({region: cells[0], total: cells[1], region: cells[2], total: cells[3]});
-        // }
-
 
         const data = {
             infected: infected,
+            tested: 'N/A',
             deceased: deceased,
             recovered: recovered,
-            // hospitalised: hospitalised,
+            country: 'Nigeria'
+            historyData: 'https://api.apify.com/v2/datasets/ccY329O0ng68poTiX/items?format=json&clean=1',
             sourceUrl: 'https://covid19.ncdc.gov.ng/',
             lastUpdatedAtApify: new Date(Date.UTC(now.getFullYear(), now.getMonth(), now.getDate(), now.getHours(), now.getMinutes())).toISOString(),
+            lastUpdatedAtSource: 'N/A'
             readMe: 'https://github.com/zpelechova/covid-ng/blob/master/README.md',
             // regions: regionData,
         };
