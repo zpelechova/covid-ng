@@ -32,11 +32,11 @@ Apify.main(async () => {
             tested: 'N/A',
             deceased: deceased,
             recovered: recovered,
-            country: 'Nigeria'
+            country: 'Nigeria',
             historyData: 'https://api.apify.com/v2/datasets/ccY329O0ng68poTiX/items?format=json&clean=1',
             sourceUrl: 'https://covid19.ncdc.gov.ng/',
             lastUpdatedAtApify: new Date(Date.UTC(now.getFullYear(), now.getMonth(), now.getDate(), now.getHours(), now.getMinutes())).toISOString(),
-            lastUpdatedAtSource: 'N/A'
+            lastUpdatedAtSource: 'N/A',
             readMe: 'https://github.com/zpelechova/covid-ng/blob/master/README.md',
             // regions: regionData,
         };
