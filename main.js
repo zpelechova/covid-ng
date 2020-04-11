@@ -23,15 +23,16 @@ Apify.main(async () => {
     const result = await page.evaluate(() => {
         const now = new Date();
 
-        const infected = $('#custom1 > tbody > tr:nth-child(1) > td:nth-child(2) > p > b').text();
-        const deceased = $('#custom1 > tbody > tr:nth-child(3) > td:nth-child(2) > p > b').text();
-        const recovered = $("#custom1 > tbody > tr:nth-child(2) > td:nth-child(2) > p > b").text();
+        const tested = $('#custom1 > tbody > tr:nth-child(1) > td:nth-child(2) > p > b').text();
+        const infected = $("#custom1 > tbody > tr:nth-child(2) > td:nth-child(2) > p > b").text();
+        const recovered = $('#custom1 > tbody > tr:nth-child(3) > td:nth-child(2) > p > b').text();
+        const deceased = $('#custom1 > tbody > tr:nth-child(4) > td:nth-child(2) > p > b').text();
 
         const data = {
+            tested: tested,
             infected: infected,
-            tested: 'N/A',
-            deceased: deceased,
             recovered: recovered,
+            deceased: deceased,
             country: 'Nigeria',
             historyData: 'https://api.apify.com/v2/datasets/ccY329O0ng68poTiX/items?format=json&clean=1',
             sourceUrl: 'https://covid19.ncdc.gov.ng/',
