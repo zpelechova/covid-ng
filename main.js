@@ -33,7 +33,8 @@ Apify.main(async () => {
         const regionData = [];
 
         for (const row of regionsTableRows) {
-            const strip = (a) => Number(a.trim())
+            const checkNumber = (a) => a.includes(",") ? a.trim().replace(',', '') : a.trim() 
+            const strip = (a) => Number(checkNumber(a))
             const cells = Array.from(row.querySelectorAll("td")).map(td => td.textContent);
             regionData.push({ region: cells[0].trim(), labConfirmedCases: strip(cells[1]), onAdmissionCases: strip(cells[2]), discharged: strip(cells[3]), deaths: strip(cells[4]) });
         }
